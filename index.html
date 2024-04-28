@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/general.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="100">
+            <div class="left-nav">
+                <div class="dropdown-btn">
+                    <a href="#" class="btn-link">
+                        <div class="border-top"></div>
+                        <div class="border-middle"></div>
+                        <div class="border-down"></div>
+                    </a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <a class="dropdown-header">dropdown header</a>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else</a></li>
+                            <div class="dropdown-divider"><a href="#"></a></div>
+                            <li><a href="#">Separated links</a></li>
+                            <div class="dropdown-divider"><a href="#"></a></div>
+                            <li><a href="#">One more separated links</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 title="new project"><a href="#">NEW PROJECT</a></h3>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="#">SOPE TIE</a></li>
+                    <li><a href="#">TESCO MEME</a></li>
+                    <li><a href="#"><img src="/assets/images/apple-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="/assets/images/apple-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="/assets/images/apple-icon.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header">
+            <div class="header-page page-header-small" filter-color="orange">
+                <div class="header-image">
+
+                </div>
+                <div class="container">
+                    <div class="profile">
+                        <img src="/assets/images/ryan.jpg" alt="">
+                    </div>
+                    <div class="profile-name">
+                        <h3>Dada Taslim</h3>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="profile-history">
+                        <div>
+                            <h3>26</h3>
+                            <p>Comments</p>
+                        </div>
+                        <div>
+                            <h3>26</h3>
+                            <p>Comments</p>
+                        </div>
+                        <div>
+                            <h3>48</h3>
+                            <p>Bookmarks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="follow-btn">
+            <button>Follow</button>
+            <a href="#"><img src="/assets/images/apple-icon.png" alt=""></a>
+            <a href="#"><img src="/assets/images/apple-icon.png" alt=""></a>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h3 class="about">About me</h3>
+                <h5>A web developer of considerable knowledge, Tesco — the name taken by Osun-raised, Ife-based Dada
+                    Taslim — code, solve and design all of his own websites, giving it a warm, intimate feel with a
+                    solid groove structure. A web developer of considerable knowledge.</h5>
+                <h3 class="title">My Portfolio</h3>
+                <div class="circle">
+                    <ul>
+                        <li><a href="#">circle</a></li>
+                        <li><a href="#">circle</a></li>
+                        <li><a href="#">circle</a></li>
+
+                    </ul>
+                </div>
+                <div class="bg-image">
+                    <img src="/assets/images/bg1.jpg" alt="">
+                    <img src="/assets/images/bg3.jpg" alt="">
+                    <img src="/assets/images/bg4.jpg" alt="">
+                    <img src="/assets/images/bg6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <footer>
+        <div class="footer">
+            <div class="left-foot">
+                <h4><a href="#">TESCO</a></h4>
+                <h4><a href="#">ABOUT US</a></h4>
+                <h4><a href="#">BLOG</a></h4>
+            </div>
+            <div class="right-foot">
+                <p>© 2024, Designed by Invision. Coded by Tesco.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('.nav-bar');
+            let scrollPosition = window.scrollY
+            if (scrollPosition > 450) {
+                header.style.backgroundColor = '#f96332';
+            } else {
+                header.style.backgroundColor = ''
+            }
+        })
+
+    </script>
+</body>
+
+</html>
