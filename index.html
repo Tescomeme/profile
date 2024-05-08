@@ -14,13 +14,19 @@
         <div class="nav-bar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="100">
             <div class="left-nav">
                 <div class="dropdown-btn">
-                    <a href="#" class="btn-link">
+                    <a href="#" class="btn-link" onclick="dropDownBtn()">
                         <div class="border-top"></div>
                         <div class="border-middle"></div>
                         <div class="border-down"></div>
                     </a>
                     <div class="dropdown-content">
-                        <ul>
+                        <div class="dropdown-content-inner">
+                            <a href="#">dropdown header</a>
+                            <a href="#">dropdown header</a>
+                            <a href="#">dropdown header</a>
+
+                        </div>
+                        <!-- <ul>
                             <a class="dropdown-header">dropdown header</a>
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -29,7 +35,7 @@
                             <li><a href="#">Separated links</a></li>
                             <div class="dropdown-divider"><a href="#"></a></div>
                             <li><a href="#">One more separated links</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
                 <h3 title="new project"><a href="#">NEW PROJECT</a></h3>
@@ -128,6 +134,19 @@
 
 
     <script>
+
+        let dropdownmenu = document.querySelector('.dropdown-content')
+        function dropDownBtn() {
+            dropdownmenu.classList.toggle('dropdown-content-height')
+        }
+
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('.btn-link')) {
+                dropdownmenu.classList.remove('dropdown-content-height')
+            }
+        })
+
+
         window.addEventListener('scroll', function () {
             let header = document.querySelector('.nav-bar');
             let scrollPosition = window.scrollY
@@ -137,6 +156,8 @@
                 header.style.backgroundColor = ''
             }
         })
+
+
 
     </script>
 </body>
